@@ -1,0 +1,138 @@
+body{
+    width: 1440px;
+    font-size: 15px;
+    .width{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+h1, .stars{
+    color: hsl(300, 43%, 22%);
+}
+.fa-star{
+    color: orange;
+}
+.upper_screen .description, .full-stars{
+    display: inline-block;
+}
+.upper_screen{
+    margin-left: 150px;
+    padding-top: 100px;
+}
+div.description{
+    width: 300px;
+    .tittle{
+        
+        font-size: xx-large;
+    }
+    .parag_desc{
+        text-align: justify;
+    }
+}
+.full-stars{
+    float: right;
+    margin-top: 50px;
+    margin-right: 250px;
+    .nd{
+        margin-left: 20px;
+    }
+    .rd{
+        margin-left: 40px;  
+    }
+}
+.stars{
+    padding: 10px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+}
+
+.lower_screen{
+    width: 100%;
+    margin-left: 150px;
+    padding-top: 100px;
+    &:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+    .customers_first, .customers_second, .customers_thrid{
+        float: left;
+        width: 19%;
+        padding: 10px;
+        background-color:hsl(300, 43%, 22%);
+        border-radius: 10px;
+        img{
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+        h4, h5{
+            float: right;
+            // margin: 0;
+            padding: 0;
+            color: white;
+            width: 50%;
+        }
+        h5{
+            position: relative;
+            top:-15px;
+            margin-top: -30px;
+            color: hsl(333, 80%, 67%);
+        }
+        .comment{
+            color: white;
+            text-align: justify;
+            float: right;
+        }
+    }
+    .customers_second, .customers_thrid{
+        margin-left: 15px;
+       
+    }
+    .customers_second{
+        margin-top: 20px;
+    }
+    .customers_thrid{
+        margin-top: 40px;
+    }
+}
+
+.attribution{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+        .width{
+            width:100%;
+            text-align: center;
+        }
+        .full-stars{
+            float: left;
+            width: 500px;
+            margin: 0 auto;
+            .nd, .rd{
+                margin-left: 0px;
+            }
+        }
+    }
+    .lower_screen{
+        .customers_first, .customers_second, .customers_thrid{
+        float: none;
+        width: 80%;
+        height: 210px;
+        margin-top: 100px;
+        }
+        .customers_second, .customers_thrid{
+            margin-top: 50px;
+            margin-left: 0;
+        }
+    }
+    .attribution{
+        margin-left: 35%;
+    }
+}
